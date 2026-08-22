@@ -13951,21 +13951,21 @@ export type Line = {
     From: Vector2,
     To: Vector2,
     Thickness: number
-}
+} & DrawingClass
 
 export type Image = {
     Data: string,
     Size: Vector2,
     Position: Vector2,
     Rounding: Vector2
-}
+} & DrawingClass
 
 export type Square = {
     Size: Vector2,
     Position: Vector2,
     Thickness: number,
     Filled: boolean   
-}
+} & DrawingClass
 
 export type Quad = {
     PointA: Vector2,
@@ -13974,7 +13974,7 @@ export type Quad = {
     PointD: Vector2,
     Thickness: number,
     Filled: boolean
-}
+} & DrawingClass
 
 export type Triangle = {
     PointA: Vector2,
@@ -13982,7 +13982,7 @@ export type Triangle = {
     PointC: Vector2,
     Thickness: number,
     Filled: boolean
-}
+} & DrawingClass
 
 export type Text = {
     Text: string,
@@ -13993,7 +13993,7 @@ export type Text = {
     Center: boolean,
     Outline: boolean,
     OutlineColor: Color3
-}
+} & DrawingClass
 
 export type _WebSocket = {
     connect: (url: string) -> WebSocketClass
