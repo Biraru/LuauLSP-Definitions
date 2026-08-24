@@ -4960,15 +4960,6 @@ declare class CatalogSearchParams
 	SortType: EnumCatalogSortType
 end
 
-declare class Color3
-	B: number
-	G: number
-	R: number
-	function Lerp(self, color: Color3, alpha: number): Color3
-	function ToHSV(self): (number, number, number)
-	function ToHex(self): string
-end
-
 declare class ColorSequence
 	Keypoints: { ColorSequenceKeypoint }
 end
