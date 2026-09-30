@@ -8,8 +8,8 @@ export type StackAlloc<T> = {
 	__end: number,
 
 	clear: (self: StackAlloc<T>, first: number?, last: number?) -> (),
-	unpack: (self: StackAlloc<T>, first: number?, last: number?) -> T...,
-	pack: (self: StackAlloc<T>, first: number?, last: number?) -> { n: number, T },
+	unpack: (self: StackAlloc<T>, first: number?, last: number?) -> T,
+	pack: (self: StackAlloc<T>, first: number?, last: number?) -> any,
 	__len: (self: StackAlloc<T>) -> number,
 }
 
