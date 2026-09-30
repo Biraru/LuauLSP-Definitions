@@ -76,3 +76,7 @@ declare function REWRITE_NAMECALLS(...: any): ()
 
 declare function GLOBALS(...: any): ()
 declare function CONSTANTS(...: any): ()
+
+-- OBFUSCATED Boolean
+
+declare LPH_OBFUSCATED: boolean
